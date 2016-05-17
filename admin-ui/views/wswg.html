@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  
+  <!-- Include Froala Editor styles -->
+
+  <link rel="stylesheet" href="bower_components/froala-wysiwyg-editor/css/froala_editor.min.css" />
+  <link rel="stylesheet" href="bower_components/froala-wysiwyg-editor/css/froala_style.min.css" />
+
+
+    <link rel="stylesheet" href="app.css">
+
+
+  </head>
+
+  <body>
+  <div id="froala-editor">
+  
+</div>
+    <!--><div>
+      <button class="btn btn-info btn-lg" ng-click="newStory()">Nouvelle histoire</button>
+    </div><-->
+
+    <div class="sample">
+      <h3> Titre :</h3>
+      <div froala="titleOptions" ng-model="title.content"></div>
+      <div froala="titleOptions" ng-model="title.content"></div>
+      <div ui-view="img"></div>
+      <button class="btn btn-info btn-lg" ng-click="enregistrerTitre()" >enregistrer</button>
+    </div>
+    <div>{{title.msg}}</div>
+
+    <!--<div class="sample">
+      <button class="btn btn-info btn-lg" ng-click="" ui-sref="add_part({id_story:title.storyId})">nouvelle partie</button>
+    <div>-->
+    
+
+  </div>
+
+  </body>
+
+</html>

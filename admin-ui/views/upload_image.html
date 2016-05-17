@@ -1,0 +1,61 @@
+
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+<script src="ng-file-upload/ng-file-upload.min.js"></script>
+
+
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-right">
+				<span class="sr-only">Toggle navbar</span>
+				<i class="icon-grid3"></i>
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Londinium"></a>
+		</div>
+
+		<ul class="nav navbar-nav navbar-right collapse">
+			<li><a href="#"><i class="icon-screen2"></i></a></li>
+			<li><a href="#"><i class="icon-paragraph-justify2"></i></a></li>
+			<li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs"></i></a>
+                <ul class="dropdown-menu icons-right dropdown-menu-right">
+					<li><a href="#"><i class="icon-cogs"></i> This is</a></li>
+					<li><a href="#"><i class="icon-grid3"></i> Dropdown</a></li>
+					<li><a href="#"><i class="icon-spinner7"></i> With right</a></li>
+					<li><a href="#"><i class="icon-link"></i> Aligned icons</a></li>
+                </ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /navbar -->
+
+
+	<!-- upload image -->
+
+	
+	<form>
+		<input type="text" name="name" ng-model="data.name"/>
+    	<input type="file" name="File" file-model="data.myFile"/>
+    	<button type="button" value="upload" ng-click="uploadFile()">upload</button>
+	
+	</form>
+	
+
+    <!-- Footer -->
+    <div class="footer clearfix">
+        <div class="pull-left">&copy; 2013. Londinium Admin Template by <a href="http://themeforest.net/user/Kopyov">Eugene Kopyov</a></div>
+    	<div class="pull-right icons-group">
+    		<a href="#"><i class="icon-screen2"></i></a>
+    		<a href="#"><i class="icon-balance"></i></a>
+    		<a href="#"><i class="icon-cog3"></i></a>
+    	</div>
+    </div>
+    <!-- /footer -->
+
+    
